@@ -1,0 +1,4 @@
+<?xml version='1.0'?>
+<launch>
+    <node name="analyse_rosbag_node" pkg="analyse_rosbag" type="analyse_rosbag_node.py" output="screen" />
+</launch>
