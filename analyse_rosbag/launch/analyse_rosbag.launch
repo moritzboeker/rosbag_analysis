@@ -1,4 +1,7 @@
 <?xml version='1.0'?>
 <launch>
-    <node name="analyse_rosbag_node" pkg="analyse_rosbag" type="analyse_rosbag_node.py" output="screen" />
+   <master auto="start"/>
+    <node name="analyse_rosbag_node" pkg="analyse_rosbag" type="analyse_rosbag_node.py" output="screen" >
+        <param name="rosbag_filepath" type="str" value="$(find analyse_rosbag)/data/dummy_env-agv-50231.agv-2020-10-01T082312+0200_2020-10-01-11-28-17_37.bag" />
+    </node>
 </launch>
